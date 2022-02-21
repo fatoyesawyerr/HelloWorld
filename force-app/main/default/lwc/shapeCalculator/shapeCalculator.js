@@ -36,17 +36,18 @@ export default class ShapeCalculator extends LightningElement {
         const s= parseInt(this.side);
         this.currentOutput='Area of the Square is: '+(s*s);
     }
-    calculateSqAreaHandler()
+
+    calculateRecAreaHandler()
     {
         const w= parseInt(this.width);
         const h= parseInt(this.height);
         this.currentOutput='Area of the Square is: '+(w*h);
     }
-    calculateSqAreaHandler()
+    calculateRhAreaHandler()
     {
-        const w= parseInt(this.width);
-        const h= parseInt(this.height);
-        this.currentOutput='Area of the Square is: '+(w*h);
+        const d1= parseInt(this.diagonal1);
+        const d2= parseInt(this.diagonal2);
+        this.currentOutput='Area of the Square is: '+(d1*d2)/2;
     }
 
 }
